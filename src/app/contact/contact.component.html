@@ -1,0 +1,89 @@
+<div id="contact"
+     data-aos="fade-up"
+     class="contact__wrapper">
+    <div class="container">
+        <section class="contact">
+            <div class="contact__title">
+                <p class="contact__subtitle">ENCUENTRAME</p>
+                <p class="contact__main-title">CONTÁCTAME AHORA</p>
+            </div>
+
+
+            <form [formGroup]="form">
+                <div class="contact__inputs">
+                    <div class="contact__inputs-inputs">
+                        <div class="contact__group-control">
+                            <h3>Asunto(*):</h3>
+                            <input type="text"
+                                   formControlName="subject"
+                                   placeholder="Escribe aquí el asunto...">
+                        </div>
+
+                        <div class="contact__group-control">
+                            <h3>Correo(*):</h3>
+                            <input type="email"
+                                   formControlName="from_email"
+                                   placeholder="Escribe aquí tu correo...">
+                        </div>
+
+                        <div class="contact__group-control">
+                            <h3>Nombre(*):</h3>
+                            <input type="text"
+                                   formControlName="from_name"
+                                   placeholder="Escribe aquí tu nombre...">
+                        </div>
+
+
+                    </div>
+                    <div class="contact__inputs-textarea">
+                        <div class="contact__group-control ">
+                            <h3>Mensaje(*):</h3>
+                            <textarea formControlName="message"
+                                      placeholder="Escribe aquí tu mensaje..."></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <p class="contact__success"
+                   *ngIf="sendSuccefully">Corre enviado con éxito!</p>
+                <div class="contact__medios">
+                    <button type="button"
+                            (click)="sendEmail()"
+                            [disabled]="form.invalid">Enviar</button>
+                </div>
+            </form>
+
+
+
+
+            <div class="contact__actions">
+                <div class="actions">
+                    <img src="./assets/img/contact__place.svg"
+                         alt="">
+                    <p>Dirección</p>
+                    <p>Tumbes, Perú</p>
+                </div>
+
+                <div class="actions">
+                    <img src="./assets/img/contact__email.svg"
+                         alt="">
+                    <p>Correo</p>
+                    <a target="_blank"
+                       href="mailto:keylarivasseminario@gmail.com">keylarivasseminario@gmail.com</a>
+                </div>
+
+                <div class="actions">
+                    <img src="./assets/img/contact__cellphone.svg"
+                         alt="">
+                    <p>Celular</p>
+                    <p>+51 918 883 593</p>
+                </div>
+                
+            </div>
+
+
+
+
+        </section>
+    </div>
+</div>

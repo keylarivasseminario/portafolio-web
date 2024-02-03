@@ -1,0 +1,29 @@
+<div id="about"
+     data-aos="flip-left"
+     class="container">
+  <section class="about-me">
+    <div class="about-me__title">
+      <p class="about-me__subtitle">ACERCA DE MÍ</p>
+      <p class="about-me__main-title">BIENVENIDO A MI PÁGINA WEB</p>
+    </div>
+    <div class="about-me__left">
+      <p class="about-me__main-description">Apasionada con el mundo de la programación, he venido trabajando en
+        desarrollo web usando las tecnologías de este entorno como lo son HTML, CSS, JavaScript, Wordpress, Joomla
+        asi mismo he ido consolidando
+        dichos conocimientos con el aprendizaje y aplicación del framework ANGULAR basado en Microfrontends y
+        WebComponents con Stencil,Manejo el
+        versionamiento de software usando Git con GitHub, gitlab y comandos
+        Linux; por el lado del backend conozco Java Springboot, Python , SQLServer y MySQL, así mismo cuento con
+        experiencia trabajando
+        con la metodología agil Scrum.</p>
+    
+      </div>
+      
+    <div class="about-me__skills">
+      <keyla-progress-bar *ngFor="let skill of skills"
+                           [bar]="skill"
+                           class="abaut-me__skill"></keyla-progress-bar>
+    </div>
+
+  </section>
+</div>

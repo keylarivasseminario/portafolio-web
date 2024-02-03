@@ -1,0 +1,178 @@
+.contact {
+  padding: 60px 20px;
+}
+
+.contact__wrapper {
+  background-image:  linear-gradient(rgba(52, 152, 219, 0.7), rgba(142, 68, 173, 0.7)),
+  url(../../assets/img/footer.jpg);
+
+  background-size: cover;
+}
+
+.contact__title {
+  text-align: center;
+}
+
+.contact__subtitle {
+  font-size: 13px;
+  color: #450eda;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.contact__main-title {
+  text-shadow: 2px 2px 2px rgb(41 41 41 / 15%);
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contact__inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.contact__inputs-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__inputs-inputs input {
+  height: 55px;
+  width: 100%;
+  border: 2px solid rgba(248, 249, 250, 0.36);
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.contact__inputs-inputs .contact__group-control {
+  margin-bottom: 20px;
+}
+
+.contact__inputs-inputs .contact__group-control h3,
+.contact__inputs-textarea .contact__group-control h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.contact__inputs-inputs {
+  width: 49%;
+}
+
+.contact__inputs-textarea {
+  width: 49%;
+}
+
+.contact__inputs-textarea textarea {
+  width: 100%;
+  border: 2px solid rgba(248, 249, 250, 0.36);
+  border-radius: 5px;
+  background-color: transparent;
+  height: 258px;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.contact__medios {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.contact__medios button {
+  border-radius: 5px;
+  outline: none;
+  padding: 1.2em 3em;
+  font-size: 14px;
+  color: #fff;
+  background: #037ef3;
+  border: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  transition: 0.5s all;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact__medios button:hover {
+  background: #ffd900;
+}
+
+.contact__medios button:disabled,
+.contact__medios button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.contact__success {
+  margin-top: 25px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contact__actions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.contact__actions .actions {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+}
+
+.actions img {
+  height: 50px;
+}
+
+.actions a {
+  color: #fff;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .contact__inputs {
+    display: block;
+  }
+
+  .contact__inputs-inputs {
+    width: 100%;
+  }
+
+  .contact__inputs-textarea {
+    width: 100%;
+  }
+
+  .contact__inputs-inputs input {
+    margin-bottom: 12px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact__actions {
+    flex-direction: column;
+  }
+
+  .contact__actions .actions {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,136 @@
+.experience {
+  padding: 48px 20px;
+  background-image: linear-gradient(rgba(52, 152, 219, 0.7), rgba(142, 68, 173, 0.7)),
+  
+    url("../../assets/img/experiencie__img.jpg");
+  background-size: cover;
+}
+
+.experience__title {
+  text-align: center;
+}
+
+.experience__subtitle {
+  font-size: 13px;
+  color: #3c07cc;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.experience__main-title {
+  text-shadow: 2px 2px 2px rgb(41 41 41 / 15%);
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.experience__time-line {
+  padding-top: 170px;
+}
+
+.time-line {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.time-line li {
+  width: 280px;
+  height: 160px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.time-line li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #3c07cc;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.time-line li::after {
+  content: "";
+  height: 62px;
+  width: 4px;
+  background-color: #3c07cc;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+}
+
+.time-line li:nth-child(even)::after {
+  top: -60px;
+}
+
+.time-line:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 84%;
+  height: 4px;
+  background-color: #3c07cc;
+  border-radius: 2px;
+  top: 8px;
+}
+
+.time-line__description {
+  font-weight: 700;
+  color: white;
+}
+
+.time-line li:nth-child(even) > .time-line__description {
+  top: -120px;
+  position: absolute;
+}
+
+.time-line li:nth-child(odd) > .time-line__description {
+  top: 60px;
+  position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .time-line {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .time-line li {
+    height: 80px;
+  }
+
+  .experience__time-line {
+    padding-top: 0;
+  }
+
+  .time-line li::before {
+    background-color: inherit;
+    content: none;
+  }
+
+  .time-line li::after {
+    background-color: inherit;
+    content: none;
+  }
+
+  .time-line:after {
+    background-color: inherit;
+    content: none;
+  }
+
+  .time-line li:nth-child(even) > .time-line__description {
+    top: 0;
+    position: relative;
+  }
+
+  .time-line li:nth-child(odd) > .time-line__description {
+    top: 0;
+    position: relative;
+  }
+}

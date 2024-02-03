@@ -1,0 +1,79 @@
+.projects {
+  padding: 48px 20px;
+}
+
+.projects__title {
+  text-align: center;
+}
+
+.projects__subtitle {
+  font-size: 13px;
+  color: #037ef3;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.projects__main-title {
+  text-shadow: 2px 2px 2px rgb(41 41 41 / 15%);
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+}
+
+.projects__collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects__collage-card {
+  width: 30%;
+  background: #edf3f3;
+  padding: 10px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.projects__collage-img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects__collage-card-description {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  background: #8e44ad;
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  font-weight: 700;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleX(-1);
+  transition: all 0.8s ease;
+}
+
+.projects__collage-card:hover .projects__collage-card-description {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleX(1);
+
+}
+
+
+@media only screen and (max-width: 992px) {
+  .projects__collage-card {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projects__collage-card {
+    width: 100%;
+  }
+}

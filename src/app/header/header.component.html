@@ -1,0 +1,9 @@
+<nav [ngClass]="getNavClass()">
+  <ul class="header__items">
+    <li><a (click)="goToSection('banner')">Inicio</a></li>
+    <li><a (click)="goToSection('about')">Acerca de mí</a></li>
+    <li><a (click)="goToSection('experiencie')">Experiencia</a></li>
+    <li><a (click)="goToSection('projects')">Proyectos</a></li>
+    <li><a (click)="goToSection('contact')">Contactame</a></li>
+  </ul>
+</nav>
