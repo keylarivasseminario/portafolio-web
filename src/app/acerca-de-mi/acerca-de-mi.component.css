@@ -39,7 +39,8 @@
   line-height: 1.5;
   font-size: 18px;
   color: #6D605D;
-  margin-left: 50px;
+  margin-left: 20%;
+  width: 400px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -55,11 +56,14 @@
 
 .about-me__container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
 .about-me__image {
-  width: 500px; /* ajusta el tamaño de la imagen según necesites */
+  width: 400px;
+  margin-top: 70px;
+  margin-left: 5%;
 }
 
 
